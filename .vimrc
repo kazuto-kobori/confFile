@@ -59,7 +59,8 @@ inoremap jj <Esc>
 set list
 
 "空白文字の形式
-set listchars=tab:>-,trail:-,eol:↲,extends:»,precedes:«
+set listchars=tab:>-,eol:↲,extends:»,precedes:«
+"空白 trail:-,
 
 "空白文字の色変更
 "hi NonText    ctermfg=241
@@ -90,7 +91,7 @@ let &t_8f = "\<ESC>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<ESC>[48;2;%lu;%lu;%lum"
 
 "背景色
-set background=dark
+" set background=dark
 
 "カラースキーム
 colo nefertiti
