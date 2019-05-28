@@ -70,12 +70,13 @@ set listchars=tab:>-,eol:↲,extends:»,precedes:«
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 "カッコの補完とインデント
-inoremap {<Enter> {}<Left><CR><Esc><S-o>
-inoremap [ []<Left>
-inoremap ( ()<left>
+"inoremap {<Enter> {}<Left><CR><Esc><S-o>
+"inoremap [ []<Left>
+"inoremap ( ()<left>
 
 "挿入中の自動折返しに日本語を対応
 set formatoptions+=mM
+
 "カーソル移動を表示行単位に
 nnoremap j gj
 nnoremap k gk
@@ -98,3 +99,13 @@ colo nefertiti
 
 "ビープ音を止める
 set belloff=all
+
+"Vim 内部の文字コード
+set encoding=utf-8
+
+"ファイル書き込み時の文字コード
+set fileencoding=utf-8
+
+"ファイル読み込み時の文字コード
+set fileencodings=utf-8,cp932
+
