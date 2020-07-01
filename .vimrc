@@ -95,7 +95,7 @@ set termguicolors
 " set background=dark
 
 "カラースキーム
-colo nefertiti
+colo japanesque
 
 "ビープ音を止める
 set belloff=all
