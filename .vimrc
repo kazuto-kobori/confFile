@@ -16,7 +16,7 @@ set laststatus=2
 "シンタックスハイライトの有効化
 syntax enable
 
-"挿入モードでバックスペースで削除可
+"挿入モードにバックスペースで削除可
 set backspace=indent,eol,start
 
 "検索時大文字小文字を区別しない
@@ -56,10 +56,10 @@ set scrolloff=3
 inoremap jj <Esc>
 
 "空白文字の表示
-set list
+"set list
 
 "空白文字の形式
-set listchars=tab:>-,eol:↲,extends:»,precedes:«
+"set listchars=tab:>-,eol:↲,extends:»,precedes:«
 "空白 trail:-,
 
 "空白文字の色変更
@@ -82,14 +82,14 @@ nnoremap j gj
 nnoremap k gk
 
 "色を 256 色に
-if $TERM == 'screen'
-    set t_Co=256
-endif
+"if $TERM == 'screen'
+"    set t_Co=256
+"endif
 
 "TrueColor
 set termguicolors
-let &t_8f = "\<ESC>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<ESC>[48;2;%lu;%lu;%lum"
+"let &t_8f = "\<ESC>[38;2;%lu;%lu;%lum"
+"let &t_8b = "\<ESC>[48;2;%lu;%lu;%lum"
 
 "背景色
 " set background=dark
@@ -107,5 +107,15 @@ set encoding=utf-8
 set fileencoding=utf-8
 
 "ファイル読み込み時の文字コード
-set fileencodings=utf-8,cp932
+set fileencodings=utf-8,cp932,eucjp
 
+" 特定の拡張子ではは tab をスペースとして扱う
+autocmd BufNewFile,BufRead *.hs set expandtab
+autocmd BufNewFile,BufRead *.py set expandtab
+autocmd BufNewFile,BufRead *.ml set expandtab
+autocmd BufNewFile,BufRead *.mly set expandtab
+autocmd BufNewFile,BufRead *.mll set expandtab
+
+" 削除した文字をヤンクしない
+nnoremap x "_x
+nnoremap s "_s
