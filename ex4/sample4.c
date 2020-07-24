@@ -141,6 +141,34 @@ int create_new_mappings(int va_start, int va_end, int pd_addr)
 	return 0;
 }
 
+int virt_to_phys(int va, int pd_addr){
+	int pd_pfn, va_pfn, pd_offset, entry;
+	int pt_pfn, pt_offset, pfn, offset, address;
+
+	printf("Virtual  Address: %p\n", (int*)va);
+	pd_pfn = addr_to_fn(pd_addr);
+	va_pfn = addr_to_fn(va);
+	pd_offset = (va_pfn >> 10) & 0x3ff;
+	entry = read_entry(pd_pfn, pd_offset);
+	if((entry & PRESENT_BIT)){
+		pt_pfn = (entry >> 12) & 0xfffff;
+	}else{
+		fprintf(stderr, "no Page Table\n");
+		return(-1);
+	}
+	pt_offset = va_pfn & 0x3ff;
+	entry = read_entry(pt_pfn, pt_offset);
+	if((entry & PRESENT_BIT)){
+		pfn = (entry >> 12) & 0xfffff;
+	}else{
+		fprintf(stderr, "no PFN\n");
+		return(-1);
+	}
+	offset = va & 0xfff;
+	address  = fn_to_addr(pfn) + offset;
+	printf("Physical Address: %p\n\n", (int*)address);
+}
+
 int main()
 {
 	int  cr3;
@@ -153,6 +181,11 @@ int main()
 	create_new_mappings(0x11111000, 0x11115000, cr3);
 	create_new_mappings(0x45334000, 0x45340000, cr3);
 	create_new_mappings(0x65533000, 0x65550000, cr3);
+
+	virt_to_phys(0x80011155, cr3);
+	virt_to_phys(0x20, cr3);
+	virt_to_phys(0x11111111, cr3);
+	virt_to_phys(0x65534333, cr3);
 
 	return 0;
 }
