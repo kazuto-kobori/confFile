@@ -115,6 +115,8 @@ autocmd BufNewFile,BufRead *.py set expandtab
 autocmd BufNewFile,BufRead *.ml set expandtab
 autocmd BufNewFile,BufRead *.mly set expandtab
 autocmd BufNewFile,BufRead *.mll set expandtab
+autocmd BufNewFile,BufRead *.yaml set expandtab
+autocmd BufNewFile,BufRead *.yaml set tabstop=2
 
 " 削除した文字をヤンクしない
 nnoremap x "_x
