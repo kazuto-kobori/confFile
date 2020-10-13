@@ -121,3 +121,6 @@ autocmd BufNewFile,BufRead *.yaml set tabstop=2
 " 削除した文字をヤンクしない
 nnoremap x "_x
 nnoremap s "_s
+
+" クリップボードを共有
+set clipboard+=unnamed
