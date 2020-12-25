@@ -82,20 +82,22 @@ nnoremap j gj
 nnoremap k gk
 
 "色を 256 色に
-"if $TERM == 'screen'
+"if $TERM == 'screen-256color' || $TERM == 'tmux-256color'
 "    set t_Co=256
 "endif
 
 "TrueColor
-set termguicolors
-"let &t_8f = "\<ESC>[38;2;%lu;%lu;%lum"
-"let &t_8b = "\<ESC>[48;2;%lu;%lu;%lum"
+if exists('+termguicolors')
+  set termguicolors
+endif
 
 "背景色
 " set background=dark
 
 "カラースキーム
-colo japanesque
+if filereadable(expand("~/.vim/colors/japanesque.vim"))
+  colo japanesque
+endif
 
 "ビープ音を止める
 set belloff=all
