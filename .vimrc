@@ -14,7 +14,7 @@ set number
 set laststatus=2
 
 "シンタックスハイライトの有効化
-syntax enable
+syntax on
 
 "挿入モードにバックスペースで削除可
 set backspace=indent,eol,start
@@ -92,11 +92,12 @@ if exists('+termguicolors')
 endif
 
 "背景色
-" set background=dark
+set background=dark
+"set background=light
 
 "カラースキーム
-if filereadable(expand("~/.vim/colors/japanesque.vim"))
-  colo japanesque
+if filereadable(expand("~/.vim/colors/ThemerVim.vim"))
+  colo ThemerVim
 endif
 
 "ビープ音を止める
