@@ -4,15 +4,15 @@
 schemes:
   themer-dark: &dark
     primary:
-      background: '#3c2f41'
+      background: '#302833'
       foreground: '#eee8d5'
 
     cursor:
-      text: '#3c2f41'
-      cursor: '#f7f1d5'
+      text: '#302833'
+      cursor: '#007bbb'
 
     selection:
-      text: '#3c2f41'
+      text: '#302833'
       background: '#51a8dd'
 
     normal:
@@ -27,23 +27,23 @@ schemes:
 
     bright:
       black: '#657b83'
-      red: '#E07587'
-      green: '#A1CB82'
-      yellow: '#F0C955'
-      blue: '#72B7DB'
-      magenta: '#C2A7D0'
-      cyan: '#99CFD4'
-      white: '#f7f1d5'
+      red: '#DD7286'
+      green: '#9FC882'
+      yellow: '#EDC655'
+      blue: '#6FB4DB'
+      magenta: '#BFA5D0'
+      cyan: '#96CDD4'
+      white: '#e9e4d4'
 
     dim:
       black: '#073642'
-      red: '#BA4E69'
-      green: '#7CA464'
-      yellow: '#CAA237'
-      blue: '#4D90BE'
-      magenta: '#9D81B3'
-      cyan: '#73A9B7'
-      white: '#f7f1d5'
+      red: '#B84D66'
+      green: '#7AA261'
+      yellow: '#C8A135'
+      blue: '#4A8EBB'
+      magenta: '#9A7FB0'
+      cyan: '#71A7B4'
+      white: '#f8fbf8'
   
 
   themer-light: &light

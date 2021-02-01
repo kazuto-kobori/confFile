@@ -18,26 +18,26 @@ set -g status-bg "#073642"
 
 # Left side of status bar
 set -g status-left-bg "#073642"
-set -g status-left-fg "#f7f1d5"
+set -g status-left-fg "#f8fbf8"
 set -g status-left-length 40
-set -g status-left "#[fg=#3c2f41,bg=#da5673,bold] #S #[fg=#da5673,bg=#839496,nobold]#[fg=#073642,bg=#839496] #(whoami) #[fg=#839496,bg=#b19693]#[fg=#839496,bg=#b19693] #I:#P #[fg=#b19693,bg=#073642,nobold]"
+set -g status-left "#[fg=#302833,bg=#da5673,bold] #S #[fg=#da5673,bg=#839496,nobold]#[fg=#073642,bg=#839496] #(whoami) #[fg=#839496,bg=#b19693]#[fg=#839496,bg=#b19693] #I:#P #[fg=#b19693,bg=#073642,nobold]"
 
 # Right side of status bar
 set -g status-right-bg "#073642"
-set -g status-right-fg "#f7f1d5"
+set -g status-right-fg "#f8fbf8"
 set -g status-right-length 150
-set -g status-right "#[fg=#b19693,bg=#073642]#[fg=#839496,bg=#b19693] %H:%M:%S #[fg=#839496,bg=#b19693]#[fg=#073642,bg=#839496] %d-%b-%y #[fg=#eee8d5,bg=#839496]#[fg=#3c2f41,bg=#eee8d5,bold] #H "
+set -g status-right "#[fg=#b19693,bg=#073642]#[fg=#839496,bg=#b19693] %H:%M:%S #[fg=#839496,bg=#b19693]#[fg=#073642,bg=#839496] %d-%b-%y #[fg=#eee8d5,bg=#839496]#[fg=#302833,bg=#eee8d5,bold] #H "
 
 # Window status
-set -g window-status-format "#[fg=#f7f1d5]#[bg=#073642] #I:#W#F "
-set -g window-status-current-format "#[fg=#f596aa,bg=black] #I:#W#F "
+set -g window-status-format "#[fg=#e9e4d4]#[bg=#073642] #I:#W#F "
+set -g window-status-current-format "#[fg=#f09199,bg=black] #I:#W#F "
 
 # Current window status
 set -g window-status-current-bg "#da5673"
-set -g window-status-current-fg "#3c2f41"
+set -g window-status-current-fg "#302833"
 
 # Window with activity status
-set -g window-status-activity-bg "#f596aa"  # fg and bg are flipped here due to
+set -g window-status-activity-bg "#f09199"  # fg and bg are flipped here due to
 set -g window-status-activity-fg "#073642" # a bug in tmux
 
 # Window separator
@@ -72,4 +72,4 @@ set -g message-command-fg black
 
 # Mode
 set -g mode-bg "#da5673"
-set -g mode-fg "#f7f1d5"
+set -g mode-fg "#e9e4d4"

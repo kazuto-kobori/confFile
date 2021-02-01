@@ -15,9 +15,9 @@
               <stop stop-color="#b19693" offset="16.67%"></stop>
               <stop stop-color="#657b83" offset="33.33%"></stop>
               <stop stop-color="#839496" offset="50%"></stop>
-              <stop stop-color="#f7f1d5" offset="66.67%"></stop>
+              <stop stop-color="#f8fbf8" offset="66.67%"></stop>
               <stop stop-color="#eee8d5" offset="83.33%"></stop>
-              <stop stop-color="#f7f1d5" offset="100%"></stop>
+              <stop stop-color="#e9e4d4" offset="100%"></stop>
             </linearGradient>
           </defs>
           <g id="light">
@@ -33,14 +33,14 @@
             <rect fill="url(#shadeGradientLight)" x="28" y="134" width="344" height="37"></rect>
           </g>
           <g id="dark" transform="translate(0.000000, 200.000000)">
-            <rect fill="#3c2f41" x="0" y="0" width="400" height="200"></rect>
+            <rect fill="#302833" x="0" y="0" width="400" height="200"></rect>
             <rect fill="#da5673" x="28" y="28" width="74" height="37"></rect>
-            <rect fill="#f596aa" x="118" y="28" width="74" height="37"></rect>
+            <rect fill="#f09199" x="118" y="28" width="74" height="37"></rect>
             <rect fill="#eebf35" x="208" y="28" width="74" height="37"></rect>
             <rect fill="#8cc16d" x="298" y="28" width="74" height="37"></rect>
             <rect fill="#81c7d4" x="28" y="81" width="74" height="37"></rect>
             <rect fill="#51a8dd" x="118" y="81" width="74" height="37"></rect>
-            <rect fill="#f7f1d5" x="208" y="81" width="74" height="37"></rect>
+            <rect fill="#007bbb" x="208" y="81" width="74" height="37"></rect>
             <rect fill="#b595cf" x="298" y="81" width="74" height="37"></rect>
             <rect fill="url(#shadeGradientDark)" x="28" y="134" width="344" height="37"></rect>
           </g>
