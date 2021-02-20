@@ -183,139 +183,139 @@ font:
 #draw_bold_text_with_bright_colors: false
 
 # Colors (Tomorrow Night)
-colors:
-  # Default colors
-  primary:
-  #  background: '#1d1f21'
-    background: '#272727'
-  #  foreground: '#c5c8c6'
-    foreground: '#F9F8F0'
+#colors: *dark
+  ## Default colors
+  #primary:
+  ##  background: '#1d1f21'
+  #  background: '#272727'
+  ##  foreground: '#c5c8c6'
+  #  foreground: '#F9F8F0'
 
-    # Bright and dim foreground colors
-    #
-    # The dimmed foreground color is calculated automatically if it is not
-    # present. If the bright foreground color is not set, or
-    # `draw_bold_text_with_bright_colors` is `false`, the normal foreground
-    # color will be used.
-    #dim_foreground: '#828482'
-    #bright_foreground: '#eaeaea'
+  #  # Bright and dim foreground colors
+  #  #
+  #  # The dimmed foreground color is calculated automatically if it is not
+  #  # present. If the bright foreground color is not set, or
+  #  # `draw_bold_text_with_bright_colors` is `false`, the normal foreground
+  #  # color will be used.
+  #  #dim_foreground: '#828482'
+  #  #bright_foreground: '#eaeaea'
 
-  # Cursor colors
-  #
-  # Colors which should be used to draw the terminal cursor.
-  #
-  # Allowed values are CellForeground and CellBackground, which reference the
-  # affected cell, or hexadecimal colors like #ff00ff.
-  cursor:
-  #  text: CellBackground
-    text: '#434944'
-  #  cursor: CellForeground
-    cursor: '#F1D660'
+  ## Cursor colors
+  ##
+  ## Colors which should be used to draw the terminal cursor.
+  ##
+  ## Allowed values are CellForeground and CellBackground, which reference the
+  ## affected cell, or hexadecimal colors like #ff00ff.
+  #cursor:
+  ##  text: CellBackground
+  #  text: '#434944'
+  ##  cursor: CellForeground
+  #  cursor: '#F1D660'
 
-  # Vi mode cursor colors
-  #
-  # Colors for the cursor when the vi mode is active.
-  #
-  # Allowed values are CellForeground and CellBackground, which reference the
-  # affected cell, or hexadecimal colors like #ff00ff.
-  vi_mode_cursor:
-  #  text: CellBackground
-    text: '#434944'
-  #  cursor: CellForeground
-    cursor: '#F1D660'
+  ## Vi mode cursor colors
+  ##
+  ## Colors for the cursor when the vi mode is active.
+  ##
+  ## Allowed values are CellForeground and CellBackground, which reference the
+  ## affected cell, or hexadecimal colors like #ff00ff.
+  #vi_mode_cursor:
+  ##  text: CellBackground
+  #  text: '#434944'
+  ##  cursor: CellForeground
+  #  cursor: '#F1D660'
 
-  # Selection colors
-  #
-  # Colors which should be used to draw the selection area.
-  #
-  # Allowed values are CellForeground and CellBackground, which reference the
-  # affected cell, or hexadecimal colors like #ff00ff.
-  selection:
-  #  text: CellBackground
-    text: '#F9F8F0'
-  #  background: CellForeground
-    background: '#196B89'
+  ## Selection colors
+  ##
+  ## Colors which should be used to draw the selection area.
+  ##
+  ## Allowed values are CellForeground and CellBackground, which reference the
+  ## affected cell, or hexadecimal colors like #ff00ff.
+  #selection:
+  ##  text: CellBackground
+  #  text: '#F9F8F0'
+  ##  background: CellForeground
+  #  background: '#196B89'
 
-  # Search colors
-  #
-  # Colors used for the search bar and match highlighting.
-  search:
-    # Allowed values are CellForeground and CellBackground, which reference the
-    # affected cell, or hexadecimal colors like #ff00ff.
-    matches:
-    #  foreground: '#000000'
-      foreground: '#3C2F41'
-    #  background: '#ffffff'
-      background: '#EFBB24'
-    #focused_match:
-    #  foreground: CellBackground
-    #  background: CellForeground
+  ## Search colors
+  ##
+  ## Colors used for the search bar and match highlighting.
+  #search:
+  #  # Allowed values are CellForeground and CellBackground, which reference the
+  #  # affected cell, or hexadecimal colors like #ff00ff.
+  #  matches:
+  #  #  foreground: '#000000'
+  #    foreground: '#3C2F41'
+  #  #  background: '#ffffff'
+  #    background: '#EFBB24'
+  #  #focused_match:
+  #  #  foreground: CellBackground
+  #  #  background: CellForeground
 
-    #bar:
-    #  background: '#c5c8c6'
-    #  foreground: '#1d1f21'
+  #  #bar:
+  #  #  background: '#c5c8c6'
+  #  #  foreground: '#1d1f21'
 
-  # Normal colors
-  normal:
-  #  black:   '#1d1f21'
-  #  red:     '#cc6666'
-  #  green:   '#b5bd68'
-  #  yellow:  '#f0c674'
-  #  blue:    '#81a2be'
-  #  magenta: '#b294bb'
-  #  cyan:    '#8abeb7'
-  #  white:   '#c5c8c6'
-    black:   '#434944'
-    red:     '#DA5673'
-    green:   '#8CC16D'
-    yellow:  '#EEBF35'
-    blue:    '#5CABDC'
-    magenta: '#B595CF'
-    cyan:    '#44A9BA'
-    white:   '#FBFBF8'
+  ## Normal colors
+  #normal:
+  ##  black:   '#1d1f21'
+  ##  red:     '#cc6666'
+  ##  green:   '#b5bd68'
+  ##  yellow:  '#f0c674'
+  ##  blue:    '#81a2be'
+  ##  magenta: '#b294bb'
+  ##  cyan:    '#8abeb7'
+  ##  white:   '#c5c8c6'
+  #  black:   '#434944'
+  #  red:     '#DA5673'
+  #  green:   '#8CC16D'
+  #  yellow:  '#EEBF35'
+  #  blue:    '#5CABDC'
+  #  magenta: '#B595CF'
+  #  cyan:    '#44A9BA'
+  #  white:   '#FBFBF8'
 
-  # Bright colors
-  bright:
-  #  black:   '#666666'
-  #  red:     '#d54e53'
-  #  green:   '#b9ca4a'
-  #  yellow:  '#e7c547'
-  #  blue:    '#7aa6da'
-  #  magenta: '#c397d8'
-  #  cyan:    '#70c0b1'
-  #  white:   '#eaeaea'
-    black:   '#6C6D6B'
-    red:     '#DBA2B4'
-    green:   '#898E38'
-    yellow:  '#8A6B3D'
-    blue:    '#126B8C'
-    magenta: '#7457A2'
-    cyan:    '#87C7D4'
-    white:   '#BFC2BC'
+  ## Bright colors
+  #bright:
+  ##  black:   '#666666'
+  ##  red:     '#d54e53'
+  ##  green:   '#b9ca4a'
+  ##  yellow:  '#e7c547'
+  ##  blue:    '#7aa6da'
+  ##  magenta: '#c397d8'
+  ##  cyan:    '#70c0b1'
+  ##  white:   '#eaeaea'
+  #  black:   '#6C6D6B'
+  #  red:     '#DBA2B4'
+  #  green:   '#898E38'
+  #  yellow:  '#8A6B3D'
+  #  blue:    '#126B8C'
+  #  magenta: '#7457A2'
+  #  cyan:    '#87C7D4'
+  #  white:   '#BFC2BC'
 
-  # Dim colors
-  #
-  # If the dim colors are not set, they will be calculated automatically based
-  # on the `normal` colors.
-  #dim:
-  #  black:   '#131415'
-  #  red:     '#864343'
-  #  green:   '#777c44'
-  #  yellow:  '#9e824c'
-  #  blue:    '#556a7d'
-  #  magenta: '#75617b'
-  #  cyan:    '#5b7d78'
-  #  white:   '#828482'
+  ## Dim colors
+  ##
+  ## If the dim colors are not set, they will be calculated automatically based
+  ## on the `normal` colors.
+  ##dim:
+  ##  black:   '#131415'
+  ##  red:     '#864343'
+  ##  green:   '#777c44'
+  ##  yellow:  '#9e824c'
+  ##  blue:    '#556a7d'
+  ##  magenta: '#75617b'
+  ##  cyan:    '#5b7d78'
+  ##  white:   '#828482'
 
-  # Indexed Colors
-  #
-  # The indexed colors include all colors from 16 to 256.
-  # When these are not set, they're filled with sensible defaults.
-  #
-  # Example:
-  #   `- { index: 16, color: '#ff00ff' }`
-  #
-  #indexed_colors: []
+  ## Indexed Colors
+  ##
+  ## The indexed colors include all colors from 16 to 256.
+  ## When these are not set, they're filled with sensible defaults.
+  ##
+  ## Example:
+  ##   `- { index: 16, color: '#ff00ff' }`
+  ##
+  ##indexed_colors: []
 
 # Bell
 #
@@ -814,3 +814,95 @@ selection:
 
   # Print all received window events.
   #print_events: false
+
+# Themer Alacritty
+
+schemes:
+  themer-dark: &dark
+    primary:
+      background: '#302833'
+      foreground: '#eee8d5'
+
+    cursor:
+      text: '#302833'
+      cursor: '#007bbb'
+
+    selection:
+      text: '#302833'
+      background: '#51a8dd'
+
+    normal:
+      black: '#b19693'
+      red: '#da5673'
+      green: '#8cc16d'
+      yellow: '#eebf35'
+      blue: '#51a8dd'
+      magenta: '#b595cf'
+      cyan: '#81c7d4'
+      white: '#eee8d5'
+
+    bright:
+      black: '#657b83'
+      red: '#DD7286'
+      green: '#9FC882'
+      yellow: '#EDC655'
+      blue: '#6FB4DB'
+      magenta: '#BFA5D0'
+      cyan: '#96CDD4'
+      white: '#e9e4d4'
+
+    dim:
+      black: '#073642'
+      red: '#B84D66'
+      green: '#7AA261'
+      yellow: '#C8A135'
+      blue: '#4A8EBB'
+      magenta: '#9A7FB0'
+      cyan: '#71A7B4'
+      white: '#f8fbf8'
+  
+
+  themer-light: &light
+    primary:
+      background: '#fdf6e3'
+      foreground: '#24484f'
+
+    cursor:
+      text: '#fdf6e3'
+      cursor: '#6c71c4'
+
+    selection:
+      text: '#fdf6e3'
+      background: '#268bd2'
+
+    normal:
+      black: '#24484f'
+      red: '#dc322f'
+      green: '#859900'
+      yellow: '#b58900'
+      blue: '#268bd2'
+      magenta: '#d33682'
+      cyan: '#002b36'
+      white: '#b5bcb2'
+
+    bright:
+      black: '#486567'
+      red: '#E35953'
+      green: '#9DAC2D'
+      yellow: '#C39F2D'
+      blue: '#51A0D5'
+      magenta: '#DB5C95'
+      cyan: '#335459'
+      white: '#d9d9ca'
+
+    dim:
+      black: '#002b36'
+      red: '#B03130'
+      green: '#6A830B'
+      yellow: '#91760B'
+      blue: '#1E78B3'
+      magenta: '#A93473'
+      cyan: '#002B36'
+      white: '#919f99'
+  
+colors: *dark
