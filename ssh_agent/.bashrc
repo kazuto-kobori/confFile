@@ -94,9 +94,7 @@ if ! ssh-add -l &> /dev/null; then
 fi
 unset ssh_agent_file
 
-#if [ -f ~/start_ssh_agent.sh ]; then
 if [ -f ~/ssh_agent.sh ]; then
-    #alias sssh=". ~/start_ssh_agent.sh"
     alias sssh=". ~/ssh_agent.sh"
 fi
 # ssh_agent
