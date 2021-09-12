@@ -32,7 +32,7 @@ if ! ssh-add -l &> /dev/null; then
   umask $umask_num
   source $ssh_agent_file
   # $HOME/.ssh 配下にある id_rsa という名前のファイルを ssh-add
-  find $HOME/.ssh -name *id_rsa | xargs ssh-add
+  find $HOME/.ssh -name "*id_rsa" | xargs ssh-add
   #ssh-add $HOME/.ssh/<key_file>
 fi
 
