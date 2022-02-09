@@ -128,3 +128,10 @@ nnoremap c "_c
 
 " クリップボードを共有
 set clipboard+=unnamed
+
+" MarkDown 用の syntax を修正
+au BufRead,BufNewFile *.md set filetype=markdown
+augroup update_markdown_syntax
+  autocmd!
+  autocmd FileType markdown syntax match markdownError '\w\@<=\w\@='
+augroup END
