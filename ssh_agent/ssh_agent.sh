@@ -26,14 +26,21 @@ umask_num=`umask`
 
 # ssh-add がエラーを返すなら、ssh-agent プロセスが存在しないものとして
 # これを起動しつつ、設定をファイルに出力
-if ! ssh-add -l &> /dev/null; then
-  #umask 066 && ssh-agent > $ssh_agent_file &> /dev/null
+exit_status=0
+ssh-add -l &> /dev/null || exit_status=$?
+if [ $exit_status -eq 1 ]; then
+  kill $SSH_AGENT_PID
+fi
+if [ $exit_status -ne 0 ]; then
   umask 066 && ssh-agent > $ssh_agent_file
   umask $umask_num
   source $ssh_agent_file
   # $HOME/.ssh 配下にある id_rsa という名前のファイルを ssh-add
+  display=$DISPLAY
+  unset DISPLAY
   find $HOME/.ssh -name "*id_rsa" | xargs ssh-add
   #ssh-add $HOME/.ssh/<key_file>
+  export DISPLAY=$display
 fi
 
 # .bash_logout に ssh-agent を終了して、
@@ -64,3 +71,4 @@ fi
 
 unset ssh_agent_file
 unset umask_num
+unset exit_status

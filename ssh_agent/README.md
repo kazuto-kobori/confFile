@@ -17,12 +17,12 @@ if ! ssh-add -l &> /dev/null; then
 fi
 unset ssh_agent_file
 
-if [ -f ~/ssh_agent.sh ]; then
-    alias sssh=". ~/ssh_agent.sh"
+if [ -f ~/.ssh/ssh_agent.sh ]; then
+    alias sssh=". ~/.ssh/ssh_agent.sh"
 fi
 # ssh_agent
 _EOF_
-ln -s $HOME/git/confFile/ssh_agent/ssh_agent.sh $HOME
+ln -s $HOME/git/confFile/ssh_agent/ssh_agent.sh $HOME/.ssh
 ```
 
 * ssh_agent の `<key_file>` を編集
