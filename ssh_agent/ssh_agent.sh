@@ -38,7 +38,7 @@ if [ $exit_status -ne 0 ]; then
   # $HOME/.ssh 配下にある id_rsa という名前のファイルを ssh-add
   display=$DISPLAY
   unset DISPLAY
-  find $HOME/.ssh -name "*id_rsa" | xargs ssh-add
+  find $HOME/.ssh -maxdepth 1 -name "*id_rsa" -or -name "*id_ed25519" | xargs ssh-add
   #ssh-add $HOME/.ssh/<key_file>
   export DISPLAY=$display
 fi
